@@ -1,2 +1,2 @@
-echo "HELLO commit-msg"
+echo "[HUSKY] commit-msg"
 pnpm commitlint --edit $1
