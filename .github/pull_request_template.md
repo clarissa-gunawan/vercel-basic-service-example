@@ -6,23 +6,27 @@ Examples:
   - chore: set up CI with release-please
 -->
 
-## Summary
+## 📝 Summary
 
 <!-- Briefly explain what this PR does -->
 
-## Changes
+## 🚀 Changes
 
 - [ ] Feature added:
 - [ ] Bug fixed:
 - [ ] Refactor / chore:
 - [ ] Other (explain):
 
-## Checklist
+## ✅ Checklist
 
 - [ ] PR title follows Conventional Commits
 - [ ] All commits are linted (optional)
 - [ ] Related issues referenced (if any)
 
-## Related
+## 🔍 Context
 
-Closes #...
+Link to related issue(s), design docs, or other PRs.
+
+## 🤔 Notes
+
+Anything reviewers should pay attention to?
