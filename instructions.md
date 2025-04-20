@@ -2,25 +2,27 @@
 
 ## Setup the project
 
-From outside your folder
+### Bootstrap next.js application
+From outside your folder bootstrap next.js application. It includes using App Router, Tailwind CSS and Typescript
 ```
 npx create-next-app@latest <application-name> --app -ts --tailwind
 ```
 
-Convert npm --> pnpm for ultra-dast and space-efficient packaging. Uses a shared store and symlinks. Ideal for monorepos and CI/CD
+### Convert npm --> pnpm 
+For ultra-dast and space-efficient packaging. Uses a shared store and symlinks. Ideal for monorepos and CI/CD
 
 Install if not available globally - usefull to run `pnpm dev` from the terminal
 ```
 npm install -g pnpm
 ```
 
-
+### Clean other package managers and install dependencies
 ```
 rm -rf node_modules package-lock.json yarn.lock pnpm-lock.yaml bun.lockb
 pnpm install
 ```
 
-Run using pnpm and open to [http://localhost:3000](http://localhost:3000)
+### Run using pnpm and open to [http://localhost:3000](http://localhost:3000)
 ```
 pnpm dev
 ```
