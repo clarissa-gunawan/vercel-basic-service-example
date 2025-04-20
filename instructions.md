@@ -24,3 +24,36 @@ Run using pnpm and open to [http://localhost:3000](http://localhost:3000)
 ```
 pnpm dev
 ```
+
+## Automate releasing and changelog
+
+### Setup as a dev dependency
+```
+pnpm add -D release-please
+```
+
+### Good Commits
+Ensure commits follow conventional commits:  recommends build:, chore:, ci:, docs:, style:, refactor:, perf:, test:
+https://www.conventionalcommits.org/en/v1.0.0/#summary
+```
+feat: add email alert on contact form
+fix: layout issue on mobile
+chore: update dependencies
+```
+
+
+### Initial Tag
+```
+git tag v1.0.0
+git push origin v1.0.0
+```
+
+
+### Workflow
+1. Push regular commits to main
+2. release-please opens a release PR with:
+    * Updated CHANGELOG.md
+    * Updated package.json version
+3. You review and merge the PR
+4. GitHub release is created automatically 🎉
+5. Vercel can deploy that version instantly via main deployment
