@@ -84,3 +84,8 @@ Test Commit
 ```
 git commit --no-verify -m "not valid commit message"
 ```
+
+Test the Hook in Isolation
+```
+./.husky/commit-msg .git/COMMIT_EDITMSG
+```
