@@ -75,17 +75,15 @@ module.exports = { extends: ['@commitlint/config-conventional'] };\
 ```
 
 Install [Husky](https://typicode.github.io/husky/)
+Note: pnpm test will fail if there are no tests present
 ```
 pnpm exec husky init
 echo "pnpm commitlint --edit \$1" > .husky/commit-msg
 ```
 
-Test Commit
-```
-git commit --no-verify -m "not valid commit message"
-```
 
 Test the Hook in Isolation
 ```
+./.husky/pre-commit
 ./.husky/commit-msg .git/COMMIT_EDITMSG
 ```
