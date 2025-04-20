@@ -3,9 +3,9 @@
 ## Setup the project
 
 ### Bootstrap next.js application
-From outside your folder bootstrap next.js application. It includes using App Router, Tailwind CSS and Typescript
+From outside your folder bootstrap next.js application. It includes using App Router, Typescript, Tailwind CSS, ES Lint, Turbopack, pnpm. The application is initialize inside a src directory. 
 ```
-npx create-next-app@latest <application-name> --app -ts --tailwind
+npx create-next-app@latest <application-name> --app --ts --tailwind --eslint --turbopack --use-pnpm --src-dir 
 ```
 
 ### Convert npm --> pnpm 
