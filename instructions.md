@@ -59,3 +59,23 @@ git push origin v1.0.0
 3. You review and merge the PR
 4. GitHub release is created automatically 🎉
 5. Vercel can deploy that version instantly via main deployment
+
+
+## Linting
+
+Install CommitLint
+```
+pnpm add -D commitlint @commitlint/config-conventional husky
+```
+
+Within `commitlint.config.js`
+
+``` 
+module.exports = { extends: ['@commitlint/config-conventional'] };\
+```
+
+Install Husky
+```
+pnpm exec husky init
+echo "pnpm commitlint --edit \$1" > .husky/commit-msg
+```
