@@ -1,2 +1,2 @@
-echo "run husky pre-commit hook"
 pnpm test
+pnpm lint
