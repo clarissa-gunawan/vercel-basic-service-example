@@ -8,7 +8,7 @@ From outside your folder bootstrap next.js application. It includes using App Ro
 npx create-next-app@latest <application-name> --app --ts --tailwind --eslint --turbopack --use-pnpm --src-dir 
 ```
 
-### Convert npm --> pnpm 
+### Convert npm --> [pnpm](https://pnpm.io/) 
 For ultra-dast and space-efficient packaging. Uses a shared store and symlinks. Ideal for monorepos and CI/CD
 
 Install if not available globally - usefull to run `pnpm dev` from the terminal
@@ -35,8 +35,8 @@ pnpm add -D release-please
 ```
 
 ### Good Commits
-Ensure commits follow conventional commits:  recommends build:, chore:, ci:, docs:, style:, refactor:, perf:, test:
-https://www.conventionalcommits.org/en/v1.0.0/#summary
+Ensure commits follow [conventional commits](https://www.conventionalcommits.org/en/v1.0.0/#summary):  recommends build:, chore:, ci:, docs:, style:, refactor:, perf:, test:
+
 ```
 feat: add email alert on contact form
 fix: layout issue on mobile
@@ -63,7 +63,7 @@ git push origin v1.0.0
 
 ## Linting
 
-Install CommitLint
+Install [CommitLint](https://github.com/conventional-changelog/commitlint)
 ```
 pnpm add -D commitlint @commitlint/config-conventional husky
 ```
@@ -74,7 +74,7 @@ Within `commitlint.config.js`
 module.exports = { extends: ['@commitlint/config-conventional'] };\
 ```
 
-Install Husky
+Install [Husky](https://typicode.github.io/husky/)
 ```
 pnpm exec husky init
 echo "pnpm commitlint --edit \$1" > .husky/commit-msg
