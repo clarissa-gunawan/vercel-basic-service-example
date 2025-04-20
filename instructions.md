@@ -50,6 +50,8 @@ git tag v1.0.0
 git push origin v1.0.0
 ```
 
+### Allow Creation of PR using Github Actions
+You may also need to set "Allow GitHub Actions to create and approve pull requests" under repository Settings > Actions > General.
 
 ### Workflow
 1. Push regular commits to main
