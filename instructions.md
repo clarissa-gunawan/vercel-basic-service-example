@@ -79,3 +79,8 @@ Install [Husky](https://typicode.github.io/husky/)
 pnpm exec husky init
 echo "pnpm commitlint --edit \$1" > .husky/commit-msg
 ```
+
+Test Commit
+```
+git commit --no-verify -m "not valid commit message"
+```
